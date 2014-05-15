@@ -1,6 +1,12 @@
 {
     "name": "kelemen/petri-net",
     "description": "Implements OO PetriNets for PHP",
+	"authors": [
+        {
+            "name": "Samuel Kelemen",
+            "email": "kelemen.samuel@gmail.com",
+        }
+    ],
     "license": "LGPL",
 	"minimum-stability": "dev",
 	"require": {
