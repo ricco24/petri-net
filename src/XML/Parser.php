@@ -208,8 +208,8 @@ class Parser
 			$arc->setInscription($inscription);
 			
 			// Setup graphics
-			$this->setupAnnotationGraphics($arc->getInscriptionGraphics(), $inscriptionEl);
-			$this->setupArcGraphics($arc->getGraphics(), $arcEl);
+			$this->setupAnnotationGraphics($arc->getInscriptionGraphics(), $this->getElement($inscriptionEl, 'graphics'));
+			$this->setupArcGraphics($arc->getGraphics(), $this->getElement($arcEl, 'graphics'));
 		}
 	}
 	
@@ -262,6 +262,8 @@ class Parser
 		// Get elements from xml
 		$positionEls = $this->getElements($graphicsEl, 'position');
 		$lineEl = $this->getElement($graphicsEl, 'line');
+		
+		var_dump($lineEl);
 		
 		// Setup data to graphics element
 		if($lineEl) { $arcGraphics->setLine($lineEl->getAttribute('shape'), $lineEl->getAttribute('color'), $lineEl->getAttribute('width'), $lineEl->getAttribute('style')); }
