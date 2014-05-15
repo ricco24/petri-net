@@ -1,7 +1,7 @@
 <?php
 
 # Using autoload
-include(__DIR__ . '/../autoload.php');
+include(__DIR__ . '/../defaultAutoload.php');
 
 # Crate PNet object
 $pNet = new \PetriNet\Net('basic1Net');

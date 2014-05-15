@@ -263,8 +263,6 @@ class Parser
 		$positionEls = $this->getElements($graphicsEl, 'position');
 		$lineEl = $this->getElement($graphicsEl, 'line');
 		
-		var_dump($lineEl);
-		
 		// Setup data to graphics element
 		if($lineEl) { $arcGraphics->setLine($lineEl->getAttribute('shape'), $lineEl->getAttribute('color'), $lineEl->getAttribute('width'), $lineEl->getAttribute('style')); }
 		
