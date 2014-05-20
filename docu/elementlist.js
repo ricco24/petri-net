@@ -1,0 +1,3 @@
+
+var ApiGen = ApiGen || {};
+ApiGen.elements = [["c","Exception"],["c","PetriNet\\Element\\Arc"],["c","PetriNet\\Element\\Place"],["c","PetriNet\\Element\\Transition"],["c","PetriNet\\Exception\\ArcException"],["c","PetriNet\\Exception\\PetriNetException"],["c","PetriNet\\Exception\\TransitionException"],["c","PetriNet\\Exception\\XMLParserException"],["c","PetriNet\\Graphics\\AbstractGraphics"],["c","PetriNet\\Graphics\\AnnotationGraphics"],["c","PetriNet\\Graphics\\ArcGraphics"],["c","PetriNet\\Graphics\\NodeGraphics"],["c","PetriNet\\Net"],["c","PetriNet\\Xml\\Generator"],["c","PetriNet\\Xml\\Parser"]];
